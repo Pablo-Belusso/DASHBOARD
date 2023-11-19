@@ -1,6 +1,6 @@
 <template>
     <div>
-      <!-- Seus elementos aqui -->
+        <h1>Aqui é o HOME!</h1>
     </div>
   </template>
 
