@@ -15,13 +15,24 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/Feedbacks',
     name: 'Feedbacks',
-    component: Feedbacks
+    component: Feedbacks,
+    meta: {
+      hasAuth: true
+    }
   },
 
   {
     path: '/Credentials',
     name: 'Credentials',
-    component: Credentials
+    component: Credentials,
+    meta: {
+      hasAuth: true
+    }
+  },
+
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: { name: 'Home' }
   }
 
 ]
